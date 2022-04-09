@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>My CV</title>
+</head>
+<script>
+
+  function changeToLanguage(buton) {
+    if (buton.value == "Turkish") {
+      buton.value = "İngilizce";
+      document.getElementById("contact").innerHTML = "İletişim";
+      document.getElementById("Work").innerHTML = "Bilgisayar Mühendisi";
+      document.getElementById("Summary").innerHTML = "Özet";
+      document.getElementById("ozetp").innerHTML = "Merhaba. Ben Fatih Enes. Marmara Üniversitesi Teknoloji Fakültesi Bilgisayar Mühendisliği bölümü 4. sınıf öğrencisiyim. Yani bir mühendis adayıyım. 23 yaşındayım. Ext JS ile backhand programlama yapmaktayım. Python'ın Flask frameworkunu kullanarak web programlıyorum.";
+      document.getElementById("skill").innerHTML = "Nitelikler";
+      document.getElementById("education").innerHTML = "Eğitim";
+      document.getElementById("lise").innerHTML = "Öğretmen Mukadder Akaydın Anadolu Lisesi";
+      document.getElementById("lisans").innerHTML = "Marmara Üniversitesi";
+      document.getElementById("workexp").innerHTML = "İş Deneyimi";
+      document.getElementById("liseto").innerHTML = "Orta Öğrenim <br> 2013 - 2017";
+      document.getElementById("lisansto").innerHTML = "Bilgisayar Mühendisliği <br> Lisans Eğitimi <br> 2018 - ";
+      document.getElementById("adesis").innerHTML = "Staj - Yazılım Birimi <br> Temmuz 2021 - Eylül 2021";
+      document.getElementById("btncont").value = "İletişim";
+      document.getElementById("ps").innerHTML = "Fatih Enes Uslu <br> Bilgisayar Mühendisi";
+    }
+    else {
+      buton.value = "Turkish";
+      document.getElementById("contact").innerHTML = "Contact";
+      document.getElementById("Work").innerHTML = "Computer Engineer";
+      document.getElementById("Summary").innerHTML = "Summary";
+      document.getElementById("ozetp").innerHTML = "Hello, I am Fatih Enes. I am a 4th year student of computer engineering at Marmara University, Faculty of Technology. I am an engineer candidate. I am 23 years old. I am doing backhand programming with Ext JS. I am programming web using Flask framework in Python.";
+      document.getElementById("skill").innerHTML = "Qualifications";
+      document.getElementById("education").innerHTML = "Education";
+      document.getElementById("lise").innerHTML = "Teachers Mukadder Akaydın Anatolian High School";
+      document.getElementById("lisans").innerHTML = "Marmara University";
+      document.getElementById("workexp").innerHTML = "Work Experience";
+      document.getElementById("liseto").innerHTML = "Secondary Education <br> 2013 - 2017";
+      document.getElementById("lisansto").innerHTML = "Computer Engineering <br> Bachelor Degree <br> 2018 - ";
+      document.getElementById("adesis").innerHTML = "Intern - Software Unit <br> July 2021 - September 2021";
+      document.getElementById("btncont").value = "Contact";
+      document.getElementById("ps").innerHTML = "Fatih Enes Uslu <br> Computer Engineer";
+    }
+  }
+
+  function cont(buton){
+    buton.style.display = "none";
+    document.getElementById("cont2").style.display = "block";
+  }
+</script>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body,
+  h1,
+  h2,
+  h3,
+  ul,
+  li,
+  a,
+  p,
+  header,
+  main,
+  section,
+  article,
+  footer,
+  aside,
+  nav {
+    margin: 0;
+    padding: 0;
+  }
+
+  header,
+  main,
+  section,
+  article,
+  footer,
+  aside,
+  nav {
+    display: block;
+  }
+
+  .back_page {
+    display: flex;
+    background-color: #199;
+    height: 100%;
+    width: 100%;
+  }
+
+  .button {
+    width: 100%;
+    display: block;
+    border: none;
+    background-color: rgb(6, 24, 104);
+    color: azure;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+  }
+
+  .first {
+    float: left;
+    width: 40%;
+    display: block;
+    background-color: rgb(6, 24, 104);
+    padding: 2em;
+    height: 655px;
+  }
+
+  .second {
+
+    float: right;
+    width: 60%;
+    background-color: azure;
+    padding: 2em;
+    height: 655px;
+  }
+
+  .img {
+    height: 10rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  li {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    color: rgb(3, 31, 31);
+    margin-left: 20px;
+  }
+
+  p {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: large;
+  }
+
+  .syfbtn {
+    width: 100%;
+    display: flex;
+    border: none;
+    background-color: azure;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 20px;
+    justify-content: end;
+    font-size: x-large;
+  }
+  .nav{
+    display: none;
+  }
+  .ing {
+    border-radius: 75%;
+    width: 20%;
+    margin-right: 10%;
+  }
+
+  .ps
+  {
+    width: 30%;
+    font-size: larger;
+    margin-right: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  .Contact
+  {
+    width: auto;
+    background-color: azure;
+    border: none;
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .cont2
+  {
+    display: none;
+    
+  }
+  @media only screen and (max-width : 1000px){
+
+    .nav {
+    display: flex;
+    width: 100%;
+  }
+    .first
+  {
+    display: none;
+  }
+  .btnys1
+  {
+    display:block;
+  }
+  .second{
+    width:auto;
+    height: auto;
+  }
+  .button
+  {
+    background-color: azure;
+    color:rgb(29, 24, 24);
+    font-size: medium;
+  }
+}
+</style>
+
+<body>
+  <div class="back_page" id="page1">
+    <div class="first">
+      <img src="IMG_20190705_120640.jpg" , class="img">
+      <h1 style="color:white; font-family:'Times New Roman', Times, serif; margin-top: 10px; margin-bottom: 10px;"
+        id="userName">Fatih Enes Uslu</h1>
+      <h2 style="color: white; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" id="Work">
+        Computer Engineer</h2>
+      <div class="iletisim">
+        <h2 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: white;" id="contact">
+          Contact</h2>
+        <button class="button" ,
+          onclick="window.location.href = 'https://www.linkedin.com/in/fatih-enes-uslu-35753119a/'">
+          <i class="fa fa-linkedin" , style="margin-right: 4px; font-size: large;"></i>
+          fatih-enes-uslu-35753119a
+        </button><br>
+        <button class="button" , onclick="window.location.href = 'https://github.com/Fatih-enes99'">
+          <i class="fa fa-github" , style="margin-right: 4px; font-size: large;"></i>
+          Fatih-enes99
+        </button><br>
+        <button class="button">
+          <i class="fa fa-phone" , style="margin-right: 4px; font-size: large;"></i>
+          +905522313422
+        </button><br>
+        <button class="button" ,
+          onclick="window.location.href = 'https://www.google.com/maps/place/G%C3%BClabibey,+Ba%C4%9Fc%C4%B1lar+96.+Sk.+No:5,+19100+%C3%87orum+Merkez%2F%C3%87orum/@40.5213583,34.9560713,17z/data=!3m1!4b1!4m13!1m7!3m6!1s0x4080d593b28db719:0x28d72d59bb1ed6d5!2zw4dvcnVtIE1lcmtlei_Dh29ydW0!3b1!8m2!3d40.5198491!4d34.7608896!3m4!1s0x4080d5293ea64b89:0xd7ecc64f5719d708!8m2!3d40.5214273!4d34.9582428'">
+          <i class="fa fa-map-marker" , style="margin-right: 4px; font-size: large;"></i>
+          Merkez / ÇORUM
+        </button><br>
+        <button class="button">
+          <i class="fa fa-envelope" , style="margin-right: 4px; font-size: large;"></i>
+          fatihen.es99@outlook.com
+        </button>
+      </div>
+    </div>
+
+    <div class="second">
+      <div class="ingbut" style="float: right;">
+        <input type="button" value="Turkish" class="Contact" onclick="changeToLanguage(this);">
+      </div>
+      <div class="nav" >
+        <img src="IMG_20190705_120640.jpg" class="ing">
+        <p class="ps" id="ps">
+          Fatih Enes Uslu <br>
+          Computer Engineer
+        </p>
+        <input type="button" class="Contact" onclick="cont(this);" id="btncont" value="Contact">
+        <div class="cont2" id="cont2">
+          <button class="button" ,
+          onclick="window.location.href = 'https://www.linkedin.com/in/fatih-enes-uslu-35753119a/'">
+          <i class="fa fa-linkedin" , style="margin-right: 4px; font-size: large;"></i>
+          fatih-enes-uslu-35753119a
+        </button><br>
+        <button class="button" , onclick="window.location.href = 'https://github.com/Fatih-enes99'">
+          <i class="fa fa-github" , style="margin-right: 4px; font-size: large;"></i>
+          Fatih-enes99
+        </button><br>
+        <button class="button">
+          <i class="fa fa-phone" , style="margin-right: 4px; font-size: large;"></i>
+          +905522313422
+        </button><br>
+        <button class="button" ,
+          onclick="window.location.href = 'https://www.google.com/maps/place/G%C3%BClabibey,+Ba%C4%9Fc%C4%B1lar+96.+Sk.+No:5,+19100+%C3%87orum+Merkez%2F%C3%87orum/@40.5213583,34.9560713,17z/data=!3m1!4b1!4m13!1m7!3m6!1s0x4080d593b28db719:0x28d72d59bb1ed6d5!2zw4dvcnVtIE1lcmtlei_Dh29ydW0!3b1!8m2!3d40.5198491!4d34.7608896!3m4!1s0x4080d5293ea64b89:0xd7ecc64f5719d708!8m2!3d40.5214273!4d34.9582428'">
+          <i class="fa fa-map-marker" , style="margin-right: 4px; font-size: large;"></i>
+          Merkez / ÇORUM
+        </button><br>
+        <button class="button">
+          <i class="fa fa-envelope" , style="margin-right: 4px; font-size: large;"></i>
+          fatihen.es99@outlook.com
+        </button>
+        </div>
+      </div>
+
+      <div class="ozet">
+        <h2 id="Summary">Summary</h2>
+        <p id="ozetp">
+          Hello, I am Fatih Enes. I am a 4th year student of computer engineering at Marmara University, Faculty of
+          Technology.
+          I am an engineer candidate. I am 23 years old. I am doing backhand programming with Ext JS. I am programming
+          web using Flask framework in Python.
+        </p>
+      </div>
+      <div>
+        <h2 id="skill">Qualifications</h2>
+        <ul style="list-style-type:none;">
+          <li>JavaScript - Ext JS </li>
+          <li>Javascript - jQuery </li>
+          <li>Python - Flask</li>
+          <li>Asp.NetCore - SignalR</li>
+          <li>Bootstrap</li>
+          <li>Python - PyQt5</li>
+          <li>WordPress</li>
+        </ul>
+      </div>
+      <div>
+        <h2 id="education">Education</h2>
+        <ul style="list-style-type:none;">
+          <li>
+            <h3 id="lise">Teachers Mukadder Akaydın Anatolian High School</h3>
+            <p id="liseto">
+              Secondary Education <br>
+              2013 - 2017
+            </p>
+          </li>
+          <li>
+            <h3 id="lisans">Marmara University</h3>
+            <p id="lisansto">
+              Computer Engineering <br>
+              Bachelor Degree <br>
+              2018 -
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2 id="workexp">Work Experience</h2>
+        <ul style="list-style-type:none;">
+          <li>
+            <h3>Adesis Yazılım</h3>
+            <p id="adesis">
+              Intern - Software Unit <br>
+              July 2021 - September 2021
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="page_two" id=" pageto">
+  </div>
+</body>
+</html>
